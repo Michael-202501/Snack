@@ -2,8 +2,8 @@ class Game {
     constructor(playerId, controls) {
         this.playerId = playerId;
         this.canvas = document.getElementById(`game-canvas-${playerId}`);
-        this.canvas.width = 600;
-        this.canvas.height = 400;
+        this.canvas.width = 470;
+        this.canvas.height = 350;
         this.ctx = this.canvas.getContext('2d');
         
         this.snake = new Snake(this.canvas);
